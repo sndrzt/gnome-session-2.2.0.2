@@ -1,0 +1,705 @@
+# Makefile.in generated automatically by automake 1.4-p6 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999, 2001 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = @host_alias@
+host_triplet = @host@
+AS = @AS@
+AWK = @AWK@
+CATALOGS = @CATALOGS@
+CATOBJEXT = @CATOBJEXT@
+CC = @CC@
+CFLAGS = @CFLAGS@
+CPPFLAGS = @CPPFLAGS@
+DATADIRNAME = @DATADIRNAME@
+DLLTOOL = @DLLTOOL@
+ECHO = @ECHO@
+ESD_CFLAGS = @ESD_CFLAGS@
+ESD_CONFIG = @ESD_CONFIG@
+ESD_LIBS = @ESD_LIBS@
+ESD_SERVER = @ESD_SERVER@
+ESOUND_REQUIRED = @ESOUND_REQUIRED@
+EXEEXT = @EXEEXT@
+GCONFTOOL = @GCONFTOOL@
+GCONF_SANITY_CHECK = @GCONF_SANITY_CHECK@
+GCONF_SCHEMA_CONFIG_SOURCE = @GCONF_SCHEMA_CONFIG_SOURCE@
+GCONF_SCHEMA_FILE_DIR = @GCONF_SCHEMA_FILE_DIR@
+GETTEXT_PACKAGE = @GETTEXT_PACKAGE@
+GLIB_GENMARSHAL = @GLIB_GENMARSHAL@
+GMOFILES = @GMOFILES@
+GMSGFMT = @GMSGFMT@
+GNOME_SESSION_CFLAGS = @GNOME_SESSION_CFLAGS@
+GNOME_SESSION_LIBS = @GNOME_SESSION_LIBS@
+HALT_COMMAND = @HALT_COMMAND@
+INSTOBJEXT = @INSTOBJEXT@
+INTLLIBS = @INTLLIBS@
+INTLTOOL_CAVES_RULE = @INTLTOOL_CAVES_RULE@
+INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
+INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
+INTLTOOL_EXTRACT = @INTLTOOL_EXTRACT@
+INTLTOOL_KEYS_RULE = @INTLTOOL_KEYS_RULE@
+INTLTOOL_MERGE = @INTLTOOL_MERGE@
+INTLTOOL_OAF_RULE = @INTLTOOL_OAF_RULE@
+INTLTOOL_PERL = @INTLTOOL_PERL@
+INTLTOOL_PONG_RULE = @INTLTOOL_PONG_RULE@
+INTLTOOL_PROP_RULE = @INTLTOOL_PROP_RULE@
+INTLTOOL_SCHEMAS_RULE = @INTLTOOL_SCHEMAS_RULE@
+INTLTOOL_SERVER_RULE = @INTLTOOL_SERVER_RULE@
+INTLTOOL_SHEET_RULE = @INTLTOOL_SHEET_RULE@
+INTLTOOL_SOUNDLIST_RULE = @INTLTOOL_SOUNDLIST_RULE@
+INTLTOOL_THEME_RULE = @INTLTOOL_THEME_RULE@
+INTLTOOL_UI_RULE = @INTLTOOL_UI_RULE@
+INTLTOOL_UPDATE = @INTLTOOL_UPDATE@
+INTLTOOL_XML_RULE = @INTLTOOL_XML_RULE@
+LDFLAGS = @LDFLAGS@
+LIBGNOMEUI_REQUIRED = @LIBGNOMEUI_REQUIRED@
+LIBTOOL = @LIBTOOL@
+LIBWRAP_LIBS = @LIBWRAP_LIBS@
+LN_S = @LN_S@
+MAINT = @MAINT@
+MAKEINFO = @MAKEINFO@
+MKINSTALLDIRS = @MKINSTALLDIRS@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+PATH_TO_XRDB = @PATH_TO_XRDB@
+PERL = @PERL@
+PKG_CONFIG = @PKG_CONFIG@
+POFILES = @POFILES@
+POSUB = @POSUB@
+PO_IN_DATADIR_FALSE = @PO_IN_DATADIR_FALSE@
+PO_IN_DATADIR_TRUE = @PO_IN_DATADIR_TRUE@
+RANLIB = @RANLIB@
+REBOOT_COMMAND = @REBOOT_COMMAND@
+REBUILD = @REBUILD@
+RSH_COMMAND = @RSH_COMMAND@
+SMPROXY_LIBS = @SMPROXY_LIBS@
+STRIP = @STRIP@
+USE_NLS = @USE_NLS@
+VERSION = @VERSION@
+WARN_CFLAGS = @WARN_CFLAGS@
+WINDOW_MANAGER = @WINDOW_MANAGER@
+X_LIBS = @X_LIBS@
+cxxflags_set = @cxxflags_set@
+
+NULL = 
+
+defaultdir = $(datadir)/gnome
+
+INCLUDES =  	$(GNOME_SESSION_CFLAGS)					$(DISABLE_DEPRECATED_CFLAGS)				$(STANDARD_PROPERTIES_CFLAGS)				$(WARN_CFLAGS)						-DGNOMELOCALEDIR=\""$(prefix)/${DATADIRNAME}/locale\""		-DGCONF_SANITY_CHECK=\""$(GCONF_SANITY_CHECK)"\"	    	-DGNOME_ICONDIR=\""$(datadir)/pixmaps\""		-DREBOOT_COMMAND=\""$(REBOOT_COMMAND)\""		-DHALT_COMMAND=\""$(HALT_COMMAND)\""			-DRSH_COMMAND=\""$(RSH_COMMAND)\""			-DDEFAULTDIR="\"$(defaultdir)\""			-DESD_SERVER="\"$(ESD_SERVER)\""
+
+
+# Flags to make sure we're not using any deprecated functions
+DISABLE_DEPRECATED_CFLAGS = 
+#	-DG_DISABLE_DEPRECATED                                  \
+#	-DGDK_DISABLE_DEPRECATED                                \
+#	-DGTK_DISABLE_DEPRECATED                                \
+#	-DGDK_PIXBUF_DISABLE_DEPRECATED                         \
+#	-DGNOME_DISABLE_DEPRECATED                              \
+#	$(NULL)
+
+# Used by the GNOME_PROGRAM_STANDARD_PROPERTIES macros
+STANDARD_PROPERTIES_CFLAGS =  	-DPREFIX=\""$(prefix)"\"                                	-DSYSCONFDIR=\""$(sysconfdir)"\"                        	-DLIBDIR=\""$(libdir)"\"                                	-DDATADIR=\""$(datadir)"\"                              	$(NULL)
+
+
+gnome_session_LDADD = $(X_LIBS) $(GNOME_SESSION_LIBS) $(LIBWRAP_LIBS)
+gnome_session_save_LDADD = $(GNOME_SESSION_LIBS)
+gnome_session_properties_LDADD = $(GNOME_SESSION_LIBS)
+splash_test_LDADD = $(GNOME_SESSION_LIBS)
+
+@SESSION_TRUE@noinst_PROGRAMS = 	splash-test
+
+@SESSION_TRUE@bin_PROGRAMS = 	gnome-session			gnome-session-save		gnome-session-properties
+
+splash_test_SOURCES =  	splash-widget.c		splash-widget.h		splash-test.c
+
+
+gnome_session_SOURCES =  	manager.c			manager.h			ice.c				ice.h				main.c				prop.c				prop.h				save.c				save.h				command.c			command.h			session.h			remote.c			remote.h			logout.c			logout.h			splash-widget.c			splash-widget.h			gsm-gsd.c			gsm-gsd.h			gsm-protocol.c			gsm-protocol.h			gsm-sound.c			gsm-sound.h			gsm-multiscreen.c		gsm-multiscreen.h		gsm-typebuiltins.c		gsm-typebuiltins.h		headers.h			util.c				util.h
+
+
+gnome_session_save_SOURCES =  	save-session.c
+
+
+gnome_session_properties_SOURCES =  	session-properties-capplet.c		session-properties-capplet.h		startup-programs.c			session-names.c				session-properties.c			session-properties.h			gsm-atk.c				gsm-atk.h				gsm-client-list.c			gsm-client-list.h			gsm-client-editor.c			gsm-client-editor.h			gsm-client-row.c			gsm-client-row.h			gsm-protocol.c				gsm-protocol.h				session.h				gsm-typebuiltins.c			gsm-typebuiltins.h
+
+
+# 	session.h			
+
+bin_SCRIPTS = gnome-wm
+
+default_DATA = default.session default.wm
+
+settingsdir = $(datadir)/control-center-2.0/capplets
+
+@SESSION_TRUE@settings_in_files = session-properties.desktop.in
+@SESSION_TRUE@settings_DATA = $(settings_in_files:.desktop.in=.desktop)
+
+pixmapdir = $(datadir)/pixmaps/splash/
+pixmap_DATA = gnome-splash.png
+
+schemasdir = @GCONF_SCHEMA_FILE_DIR@
+schemas_in_files = gnome-session.schemas.in
+schemas_DATA = $(schemas_in_files:.schemas.in=.schemas)
+
+EXTRA_DIST =  	default.in			default.wm.in			gnome-wm 			$(pixmap_DATA)			$(schemas_in_files)		gsm-marshal.list		session-properties.desktop.in
+
+
+gsm_enum_headers =  	$(top_srcdir)/gnome-session/gsm-protocol.h
+
+
+built_sources =  	gsm-marshal.c			gsm-marshal.h			gsm-typebuiltins.c		gsm-typebuiltins.h
+
+
+CLEANFILES = $(built_sources)
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_HEADER = ../config.h
+CONFIG_CLEAN_FILES =  gnome-session.schemas.in
+@SESSION_TRUE@bin_PROGRAMS =  gnome-session$(EXEEXT) \
+@SESSION_TRUE@gnome-session-save$(EXEEXT) \
+@SESSION_TRUE@gnome-session-properties$(EXEEXT)
+@SESSION_TRUE@noinst_PROGRAMS =  splash-test$(EXEEXT)
+PROGRAMS =  $(bin_PROGRAMS) $(noinst_PROGRAMS)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I..
+LIBS = @LIBS@
+X_CFLAGS = @X_CFLAGS@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_PRE_LIBS = @X_PRE_LIBS@
+gnome_session_OBJECTS =  manager.$(OBJEXT) ice.$(OBJEXT) main.$(OBJEXT) \
+prop.$(OBJEXT) save.$(OBJEXT) command.$(OBJEXT) remote.$(OBJEXT) \
+logout.$(OBJEXT) splash-widget.$(OBJEXT) gsm-gsd.$(OBJEXT) \
+gsm-protocol.$(OBJEXT) gsm-sound.$(OBJEXT) gsm-multiscreen.$(OBJEXT) \
+gsm-typebuiltins.$(OBJEXT) util.$(OBJEXT)
+gnome_session_DEPENDENCIES = 
+gnome_session_LDFLAGS = 
+gnome_session_save_OBJECTS =  save-session.$(OBJEXT)
+gnome_session_save_DEPENDENCIES = 
+gnome_session_save_LDFLAGS = 
+gnome_session_properties_OBJECTS =  session-properties-capplet.$(OBJEXT) \
+startup-programs.$(OBJEXT) session-names.$(OBJEXT) \
+session-properties.$(OBJEXT) gsm-atk.$(OBJEXT) \
+gsm-client-list.$(OBJEXT) gsm-client-editor.$(OBJEXT) \
+gsm-client-row.$(OBJEXT) gsm-protocol.$(OBJEXT) \
+gsm-typebuiltins.$(OBJEXT)
+gnome_session_properties_DEPENDENCIES = 
+gnome_session_properties_LDFLAGS = 
+splash_test_OBJECTS =  splash-widget.$(OBJEXT) splash-test.$(OBJEXT)
+splash_test_DEPENDENCIES = 
+splash_test_LDFLAGS = 
+SCRIPTS =  $(bin_SCRIPTS)
+
+COMPILE = $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(LDFLAGS) -o $@
+DATA =  $(default_DATA) $(pixmap_DATA) $(schemas_DATA) $(settings_DATA)
+
+DIST_COMMON =  AUTHORS ChangeLog Makefile.am Makefile.in TODO \
+gnome-session.schemas.in.in
+
+
+DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+
+TAR = gtar
+GZIP_ENV = --best
+SOURCES = $(gnome_session_SOURCES) $(gnome_session_save_SOURCES) $(gnome_session_properties_SOURCES) $(splash_test_SOURCES)
+OBJECTS = $(gnome_session_OBJECTS) $(gnome_session_save_OBJECTS) $(gnome_session_properties_OBJECTS) $(splash_test_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .lo .o .obj .s
+$(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --gnu --include-deps gnome-session/Makefile
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+gnome-session.schemas.in: $(top_builddir)/config.status gnome-session.schemas.in.in
+	cd $(top_builddir) && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+mostlyclean-binPROGRAMS:
+
+clean-binPROGRAMS:
+	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+
+distclean-binPROGRAMS:
+
+maintainer-clean-binPROGRAMS:
+
+install-binPROGRAMS: $(bin_PROGRAMS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo " $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	  else :; fi; \
+	done
+
+uninstall-binPROGRAMS:
+	@$(NORMAL_UNINSTALL)
+	list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	done
+
+mostlyclean-noinstPROGRAMS:
+
+clean-noinstPROGRAMS:
+	-test -z "$(noinst_PROGRAMS)" || rm -f $(noinst_PROGRAMS)
+
+distclean-noinstPROGRAMS:
+
+maintainer-clean-noinstPROGRAMS:
+
+.c.o:
+	$(COMPILE) -c $<
+
+# FIXME: We should only use cygpath when building on Windows,
+# and only if it is available.
+.c.obj:
+	$(COMPILE) -c `cygpath -w $<`
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+	-rm -f *.$(OBJEXT)
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+gnome-session$(EXEEXT): $(gnome_session_OBJECTS) $(gnome_session_DEPENDENCIES)
+	@rm -f gnome-session$(EXEEXT)
+	$(LINK) $(gnome_session_LDFLAGS) $(gnome_session_OBJECTS) $(gnome_session_LDADD) $(LIBS)
+
+gnome-session-save$(EXEEXT): $(gnome_session_save_OBJECTS) $(gnome_session_save_DEPENDENCIES)
+	@rm -f gnome-session-save$(EXEEXT)
+	$(LINK) $(gnome_session_save_LDFLAGS) $(gnome_session_save_OBJECTS) $(gnome_session_save_LDADD) $(LIBS)
+
+gnome-session-properties$(EXEEXT): $(gnome_session_properties_OBJECTS) $(gnome_session_properties_DEPENDENCIES)
+	@rm -f gnome-session-properties$(EXEEXT)
+	$(LINK) $(gnome_session_properties_LDFLAGS) $(gnome_session_properties_OBJECTS) $(gnome_session_properties_LDADD) $(LIBS)
+
+splash-test$(EXEEXT): $(splash_test_OBJECTS) $(splash_test_DEPENDENCIES)
+	@rm -f splash-test$(EXEEXT)
+	$(LINK) $(splash_test_LDFLAGS) $(splash_test_OBJECTS) $(splash_test_LDADD) $(LIBS)
+
+install-binSCRIPTS: $(bin_SCRIPTS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_SCRIPTS)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo " $(INSTALL_SCRIPT) $$p $(DESTDIR)$(bindir)/`echo $$p|sed '$(transform)'`"; \
+	    $(INSTALL_SCRIPT) $$p $(DESTDIR)$(bindir)/`echo $$p|sed '$(transform)'`; \
+	  else if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_SCRIPT) $(srcdir)/$$p $(DESTDIR)$(bindir)/`echo $$p|sed '$(transform)'`"; \
+	    $(INSTALL_SCRIPT) $(srcdir)/$$p $(DESTDIR)$(bindir)/`echo $$p|sed '$(transform)'`; \
+	  else :; fi; fi; \
+	done
+
+uninstall-binSCRIPTS:
+	@$(NORMAL_UNINSTALL)
+	list='$(bin_SCRIPTS)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(bindir)/`echo $$p|sed '$(transform)'`; \
+	done
+
+install-defaultDATA: $(default_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(defaultdir)
+	@list='$(default_DATA)'; for p in $$list; do \
+	  if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(defaultdir)/$$p"; \
+	    $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(defaultdir)/$$p; \
+	  else if test -f $$p; then \
+	    echo " $(INSTALL_DATA) $$p $(DESTDIR)$(defaultdir)/$$p"; \
+	    $(INSTALL_DATA) $$p $(DESTDIR)$(defaultdir)/$$p; \
+	  fi; fi; \
+	done
+
+uninstall-defaultDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(default_DATA)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(defaultdir)/$$p; \
+	done
+
+install-pixmapDATA: $(pixmap_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(pixmapdir)
+	@list='$(pixmap_DATA)'; for p in $$list; do \
+	  if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(pixmapdir)/$$p"; \
+	    $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(pixmapdir)/$$p; \
+	  else if test -f $$p; then \
+	    echo " $(INSTALL_DATA) $$p $(DESTDIR)$(pixmapdir)/$$p"; \
+	    $(INSTALL_DATA) $$p $(DESTDIR)$(pixmapdir)/$$p; \
+	  fi; fi; \
+	done
+
+uninstall-pixmapDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(pixmap_DATA)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(pixmapdir)/$$p; \
+	done
+
+install-schemasDATA: $(schemas_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(schemasdir)
+	@list='$(schemas_DATA)'; for p in $$list; do \
+	  if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(schemasdir)/$$p"; \
+	    $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(schemasdir)/$$p; \
+	  else if test -f $$p; then \
+	    echo " $(INSTALL_DATA) $$p $(DESTDIR)$(schemasdir)/$$p"; \
+	    $(INSTALL_DATA) $$p $(DESTDIR)$(schemasdir)/$$p; \
+	  fi; fi; \
+	done
+
+uninstall-schemasDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(schemas_DATA)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(schemasdir)/$$p; \
+	done
+
+install-settingsDATA: $(settings_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(settingsdir)
+	@list='$(settings_DATA)'; for p in $$list; do \
+	  if test -f $(srcdir)/$$p; then \
+	    echo " $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(settingsdir)/$$p"; \
+	    $(INSTALL_DATA) $(srcdir)/$$p $(DESTDIR)$(settingsdir)/$$p; \
+	  else if test -f $$p; then \
+	    echo " $(INSTALL_DATA) $$p $(DESTDIR)$(settingsdir)/$$p"; \
+	    $(INSTALL_DATA) $$p $(DESTDIR)$(settingsdir)/$$p; \
+	  fi; fi; \
+	done
+
+uninstall-settingsDATA:
+	@$(NORMAL_UNINSTALL)
+	list='$(settings_DATA)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(settingsdir)/$$p; \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = gnome-session
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$d/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+	$(MAKE) $(AM_MAKEFLAGS) top_distdir="$(top_distdir)" distdir="$(distdir)" dist-hook
+command.o: command.c ../config.h command.h manager.h headers.h session.h \
+	save.h prop.h
+gnome-login-check.o: gnome-login-check.c ../config.h
+gsm-atk.o: gsm-atk.c ../config.h gsm-atk.h
+gsm-client-editor.o: gsm-client-editor.c ../config.h gsm-client-editor.h \
+	gsm-protocol.h gsm-client-row.h gsm-client-list.h gsm-atk.h
+gsm-client-list.o: gsm-client-list.c ../config.h gsm-client-list.h \
+	gsm-protocol.h gsm-client-row.h gsm-client-editor.h
+gsm-client-row.o: gsm-client-row.c ../config.h gsm-client-row.h \
+	gsm-protocol.h gsm-client-list.h gsm-client-editor.h
+gsm-gsd.o: gsm-gsd.c ../config.h gsm-gsd.h util.h
+gsm-multiscreen.o: gsm-multiscreen.c ../config.h gsm-multiscreen.h
+gsm-protocol.o: gsm-protocol.c ../config.h session.h gsm-protocol.h \
+	gsm-typebuiltins.h gsm-marshal.h gsm-marshal.c
+gsm-sound.o: gsm-sound.c ../config.h gsm-sound.h
+gsm-typebuiltins.o: gsm-typebuiltins.c gsm-typebuiltins.h gsm-protocol.h
+ice.o: ice.c ../config.h ice.h headers.h session.h manager.h util.h
+logout.o: logout.c ../config.h ice.h headers.h logout.h command.h \
+	manager.h util.h gsm-multiscreen.h
+main.o: main.c ../config.h manager.h headers.h ice.h save.h command.h \
+	splash-widget.h util.h gsm-sound.h gsm-gsd.h
+manager.o: manager.c ../config.h manager.h headers.h session.h prop.h \
+	command.h splash-widget.h remote.h save.h logout.h ice.h \
+	gsm-protocol.h util.h
+prop.o: prop.c prop.h headers.h
+remote.o: remote.c ../config.h remote.h headers.h
+save-session.o: save-session.c ../config.h
+save.o: save.c ../config.h save.h headers.h session.h prop.h command.h \
+	manager.h util.h
+session-names.o: session-names.c ../config.h \
+	session-properties-capplet.h headers.h gsm-protocol.h
+session-properties-capplet.o: session-properties-capplet.c ../config.h \
+	headers.h gsm-protocol.h session-properties-capplet.h \
+	session-properties.h
+session-properties.o: session-properties.c ../config.h gsm-client-list.h \
+	gsm-protocol.h gsm-atk.h session-properties.h \
+	session-properties-capplet.h
+splash-test.o: splash-test.c ../config.h splash-widget.h
+splash-widget.o: splash-widget.c ../config.h headers.h splash-widget.h
+splash.o: splash.c ../config.h splash.h headers.h manager.h
+startup-programs.o: startup-programs.c ../config.h \
+	session-properties-capplet.h gsm-protocol.h headers.h
+util.o: util.c ../config.h util.h
+
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am: install-binPROGRAMS install-binSCRIPTS
+install-exec: install-exec-am
+
+install-data-am: install-defaultDATA install-pixmapDATA \
+		install-schemasDATA install-settingsDATA \
+		install-data-local
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am: uninstall-binPROGRAMS uninstall-binSCRIPTS \
+		uninstall-defaultDATA uninstall-pixmapDATA \
+		uninstall-schemasDATA uninstall-settingsDATA
+uninstall: uninstall-am
+all-am: Makefile $(PROGRAMS) $(SCRIPTS) $(DATA)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+	$(mkinstalldirs)  $(DESTDIR)$(bindir) $(DESTDIR)$(bindir) \
+		$(DESTDIR)$(defaultdir) $(DESTDIR)$(pixmapdir) \
+		$(DESTDIR)$(schemasdir) $(DESTDIR)$(settingsdir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+	-test -z "$(CLEANFILES)" || rm -f $(CLEANFILES)
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-binPROGRAMS mostlyclean-noinstPROGRAMS \
+		mostlyclean-compile mostlyclean-libtool \
+		mostlyclean-tags mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+clean-am:  clean-binPROGRAMS clean-noinstPROGRAMS clean-compile \
+		clean-libtool clean-tags clean-generic mostlyclean-am
+
+clean: clean-am
+
+distclean-am:  distclean-binPROGRAMS distclean-noinstPROGRAMS \
+		distclean-compile distclean-libtool distclean-tags \
+		distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-binPROGRAMS \
+		maintainer-clean-noinstPROGRAMS \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-tags maintainer-clean-generic \
+		distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-binPROGRAMS distclean-binPROGRAMS clean-binPROGRAMS \
+maintainer-clean-binPROGRAMS uninstall-binPROGRAMS install-binPROGRAMS \
+mostlyclean-noinstPROGRAMS distclean-noinstPROGRAMS \
+clean-noinstPROGRAMS maintainer-clean-noinstPROGRAMS \
+mostlyclean-compile distclean-compile clean-compile \
+maintainer-clean-compile mostlyclean-libtool distclean-libtool \
+clean-libtool maintainer-clean-libtool uninstall-binSCRIPTS \
+install-binSCRIPTS uninstall-defaultDATA install-defaultDATA \
+uninstall-pixmapDATA install-pixmapDATA uninstall-schemasDATA \
+install-schemasDATA uninstall-settingsDATA install-settingsDATA tags \
+mostlyclean-tags distclean-tags clean-tags maintainer-clean-tags \
+distdir info-am info dvi-am dvi check check-am installcheck-am \
+installcheck install-exec-am install-exec install-data-local \
+install-data-am install-data install-am install uninstall-am uninstall \
+all-redirect all-am all installdirs mostlyclean-generic \
+distclean-generic clean-generic maintainer-clean-generic clean \
+mostlyclean distclean maintainer-clean
+
+
+@SESSION_TRUE@@INTLTOOL_DESKTOP_RULE@
+
+default.session: default.in ../config.status
+	sed -e 's,\@WINDOW_MANAGER\@,$(WINDOW_MANAGER),g' \
+		< $(srcdir)/default.in > default.tmp \
+	  && mv default.tmp default.session
+
+default.wm: default.wm.in ../config.status
+	sed -e 's,\@WINDOW_MANAGER\@,$(WINDOW_MANAGER),g' \
+		< $(srcdir)/default.wm.in > default.wm.tmp \
+	  && mv default.wm.tmp default.wm
+
+@INTLTOOL_SCHEMAS_RULE@
+
+# don't do this if we are building in eg. rpm
+install-data-local:
+	if test -z "$(DESTDIR)" ; then \
+	  for p in $(schemas_DATA) ; do \
+	    GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(top_builddir)/gnome-session/$$p ; \
+	  done \
+	fi
+
+gsm-typebuiltins.c: @REBUILD@ $(gsm_enum_headers)
+	glib-mkenums    --fhead "#include <glib-object.h>\n" \
+			--fhead "#include \"gsm-typebuiltins.h\"\n\n" \
+			--fprod "\n/* enumerations from \"@filename@\" */" \
+			--fprod "\n#include \"@filename@\"\n" \
+			--vhead "static const G@Type@Value _@enum_name@_values[] = {" \
+			--vprod "  { @VALUENAME@, \"@VALUENAME@\", \"@valuenick@\" }," \
+			--vtail "  { 0, NULL, NULL }\n};\n\n" \
+			--vtail "GType\n@enum_name@_get_type (void)\n{\n" \
+			--vtail "  static GType type = 0;\n\n" \
+			--vtail "  if (!type)\n" \
+			--vtail "    type = g_@type@_register_static (\"@EnumName@\", _@enum_name@_values);\n\n" \
+			--vtail "  return type;\n}\n\n" \
+		$(gsm_enum_headers) > $@
+
+gsm-typebuiltins.h: @REBUILD@ $(gsm_enum_headers)
+	glib-mkenums    --fhead "#ifndef __GSM_TYPEBUILTINS_H__\n" \
+			--fhead "#define __GSM_TYPEBUILTINS_H__ 1\n\n" \
+			--fhead "G_BEGIN_DECLS\n\n" \
+			--ftail "G_END_DECLS\n\n" \
+			--ftail "#endif /* __GSM_TYPEBUILTINS_H__ */\n" \
+			--fprod "\n/* --- @filename@ --- */" \
+			--eprod "#define GSM_TYPE_@ENUMNAME@ @enum_name@_get_type()\n" \
+			--eprod "GType @enum_name@_get_type (void);\n" \
+		$(gsm_enum_headers) >  $@
+
+$(gnome_session_OBJECTS) $(save_session_OBJECTS) $(session_properties_OBJECTS): $(built_sources)
+
+gsm-marshal.h: gsm-marshal.list $(GLIB_GENMARSHAL)
+	$(GLIB_GENMARSHAL) $< --header --prefix=gsm_marshal > $@
+gsm-marshal.c: gsm-marshal.list $(GLIB_GENMARSHAL)
+	$(GLIB_GENMARSHAL) $< --body --prefix=gsm_marshal > $@
+
+dist-hook:
+	cd $(distdir) ; rm -f $(CLEANFILES)
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

@@ -1,0 +1,18 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+gnome-session/gnome-session.schemas.in.in
+gnome-session/gsm-client-editor.c
+gnome-session/gsm-client-list.c
+gnome-session/gsm-client-row.c
+gnome-session/gsm-gsd.c
+gnome-session/logout.c
+gnome-session/main.c
+gnome-session/manager.c
+gnome-session/save-session.c
+gnome-session/save-session.desktop.in
+gnome-session/session-names.c
+gnome-session/session-properties-capplet.c
+gnome-session/session-properties.c
+gnome-session/session-properties.desktop.in
+gnome-session/splash-widget.c
+gnome-session/startup-programs.c

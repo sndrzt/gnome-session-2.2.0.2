@@ -1,0 +1,641 @@
+# Lithuanian translation of gnome-session
+# Copyright (C) 2000-2002 Free Software Foundation, Inc.
+# Gediminas Paulauskas <menesis@delfi.lt>, 2000-2002.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-session 1.5.13\n"
+"POT-Creation-Date: 2003-02-04 11:59+1300\n"
+"PO-Revision-Date: 2002-05-07 11:24+0200\n"
+"Last-Translator: Gediminas Paulauskas <menesis@delfi.lt>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gnome-session/gnome-session.schemas.in.in.h:1
+msgid "Allow TCP connections"
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:2
+msgid ""
+"For security reasons, on platforms which have _IceTcpTransNoListen() "
+"(XFree86 systems), gnome-session does not listen for connections on TCP "
+"ports. This option will allow connections from (authorized) remote hosts. "
+"gnome-session must be restarted for this to take effect."
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:3
+msgid "If enabled, gnome-session will prompt the user before ending a session."
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:4
+msgid ""
+"If enabled, gnome-session will save the session automatically. Otherwise, "
+"the logout dialog will have an option to save the session."
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:5
+#, fuzzy
+msgid "Logout prompt"
+msgstr "Atsijungti"
+
+#: gnome-session/gnome-session.schemas.in.in.h:6
+msgid ""
+"Preferred Image to use for the splash screen when logging in to the GNOME "
+"Desktop"
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:7
+#, fuzzy
+msgid "Save sessions"
+msgstr "Sesija"
+
+#: gnome-session/gnome-session.schemas.in.in.h:8
+#, fuzzy
+msgid "Show the splash screen"
+msgstr "Rodyti reklamą prisijungiant"
+
+#: gnome-session/gnome-session.schemas.in.in.h:9
+msgid "Show the splash screen when the session starts up"
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:10
+msgid "Splash Screen Image"
+msgstr ""
+
+#: gnome-session/gsm-client-editor.c:96 gnome-session/startup-programs.c:310
+msgid "_Order:"
+msgstr "_Tvarka:"
+
+#: gnome-session/gsm-client-editor.c:98
+msgid "The order in which applications are started in the session."
+msgstr "Tvarka, kuria programos paleidžiamos sesijos pradžioje."
+
+#: gnome-session/gsm-client-editor.c:105
+msgid "What happens to the application when it exits."
+msgstr "Kas atsitinka programai, kai ji baigia darbą."
+
+#: gnome-session/gsm-client-editor.c:108
+msgid "_Style:"
+msgstr "_Stilius:"
+
+#: gnome-session/gsm-client-list.c:150
+#: gnome-session/session-properties-capplet.c:362
+msgid "Order"
+msgstr "Tvarka"
+
+#: gnome-session/gsm-client-list.c:155
+msgid "Style"
+msgstr "Stilius"
+
+#: gnome-session/gsm-client-list.c:160
+msgid "State"
+msgstr "Būsena"
+
+#: gnome-session/gsm-client-list.c:165
+msgid "Program"
+msgstr "Programa"
+
+#: gnome-session/gsm-client-row.c:31
+msgid "Inactive"
+msgstr "Neaktyvi"
+
+#: gnome-session/gsm-client-row.c:32
+msgid "Waiting to start or already finished."
+msgstr "Laukiama, kol pasileis, arba jau baigėsi."
+
+#: gnome-session/gsm-client-row.c:34
+msgid "Starting"
+msgstr "Paleidžiama"
+
+#: gnome-session/gsm-client-row.c:35
+msgid "Started but has not yet reported state."
+msgstr "Paleista, bet kol kas nepranešė būsenos."
+
+#: gnome-session/gsm-client-row.c:37
+msgid "Running"
+msgstr "Bėganti"
+
+#: gnome-session/gsm-client-row.c:38
+msgid "A normal member of the session."
+msgstr "Normali sesijos narė."
+
+#: gnome-session/gsm-client-row.c:40
+msgid "Saving"
+msgstr "Išsaugoma"
+
+#: gnome-session/gsm-client-row.c:41
+msgid "Saving session details."
+msgstr "Išsaugomos sesijos detalės."
+
+#: gnome-session/gsm-client-row.c:43
+msgid "Unknown"
+msgstr "Nežinoma"
+
+#: gnome-session/gsm-client-row.c:44
+msgid "State not reported within timeout."
+msgstr "Būsena nepranešta laiko ribose."
+
+#: gnome-session/gsm-client-row.c:50
+msgid "Normal"
+msgstr "Normali"
+
+#: gnome-session/gsm-client-row.c:51
+msgid "Unaffected by logouts but can die."
+msgstr "Nepaveikiama atsijungimo bet gali mirti."
+
+#: gnome-session/gsm-client-row.c:53
+#, fuzzy
+msgid "Restart"
+msgstr "Atstatyti"
+
+#: gnome-session/gsm-client-row.c:54
+msgid "Never allowed to die."
+msgstr "Niekada neleidžiama mirti."
+
+#: gnome-session/gsm-client-row.c:56
+msgid "Trash"
+msgstr "Šiukšlė"
+
+#: gnome-session/gsm-client-row.c:57
+msgid "Discarded on logout and can die."
+msgstr "Atmetama atsijungiant ir gali mirti."
+
+#: gnome-session/gsm-client-row.c:59
+msgid "Settings"
+msgstr "Nuostatos"
+
+#: gnome-session/gsm-client-row.c:60
+msgid "Always started on every login."
+msgstr "Paleidžiama kaskart prisijungus."
+
+#.
+#. * it would be nice to have a dialog which either:
+#. *
+#. * 1.  lets you change the message on it
+#. * 2.  lets you append messages and has a "history"
+#. *
+#. * for now, we just kill the old dialog and pop up a new one.
+#.
+#: gnome-session/gsm-gsd.c:41
+msgid ""
+"There was an error starting the GNOME Settings Daemon.\n"
+"\n"
+"Some things, such as themes, sounds, or background settings may not work "
+"correctly."
+msgstr ""
+
+#: gnome-session/gsm-gsd.c:53
+msgid ""
+"\n"
+"\n"
+"The last error message was:\n"
+"\n"
+msgstr ""
+
+#: gnome-session/gsm-gsd.c:58
+msgid ""
+"\n"
+"\n"
+"GNOME will still try to restart the Settings Daemon next time you log in."
+msgstr ""
+
+#: gnome-session/gsm-gsd.c:115
+msgid "There was an unknown activation error."
+msgstr ""
+
+#: gnome-session/gsm-gsd.c:157
+msgid "The Settings Daemon restarted too many times."
+msgstr ""
+
+#: gnome-session/logout.c:270
+msgid "Are you sure you want to log out?"
+msgstr ""
+
+#: gnome-session/logout.c:298
+#, fuzzy
+msgid "_Save current setup"
+msgstr "Išsaugoti esamą būseną"
+
+#: gnome-session/logout.c:318
+msgid "Action"
+msgstr "Veiksmas"
+
+#: gnome-session/logout.c:326
+msgid "_Log Out"
+msgstr "_Atsijungti"
+
+#: gnome-session/logout.c:329
+#, fuzzy
+msgid "Sh_ut Down"
+msgstr "Išjungti"
+
+#: gnome-session/logout.c:332
+msgid "_Restart the computer"
+msgstr ""
+
+#: gnome-session/main.c:76
+msgid "Specify a session name to load"
+msgstr "Nurodyk įkeliamos sesijos pavadinimą"
+
+#: gnome-session/main.c:77
+msgid "Only read saved sessions from the default.session file"
+msgstr "Tik perskaityti išsaugotas sesijas iš default.session bylos"
+
+#: gnome-session/main.c:78
+msgid "Millisecond period spent waiting for clients to register (0=forever)"
+msgstr "Kiek milisekundžių laukti, kol klientai prisiregistruos (0=visada)"
+
+#: gnome-session/main.c:79
+msgid "Millisecond period spent waiting for clients to respond (0=forever)"
+msgstr "Kiek milisekundžių laukti, kol klientai atsilieps (0=visada)"
+
+#: gnome-session/main.c:80
+msgid "Millisecond period spent waiting for clients to die (0=forever)"
+msgstr "Kiek milisekundžių laukti, kol klientai numirs (0=forever)"
+
+#: gnome-session/main.c:212
+#, c-format
+msgid ""
+"Could not look up internet address for %s.\n"
+"This will prevent GNOME from operating correctly.\n"
+"It may be possible to correct the problem by adding\n"
+"%s to the file /etc/hosts."
+msgstr ""
+"Negalėjau ieškoti %s adreso Internete.\n"
+"Tai neleis GNOME veikti teisingai.\n"
+"Problemą įmanoma pataisyti, prirašius\n"
+"%s į bylą /etc/hosts."
+
+#: gnome-session/main.c:219
+msgid "Log in Anyway"
+msgstr ""
+
+#: gnome-session/main.c:220
+#, fuzzy
+msgid "Try Again"
+msgstr "Bandyti vėl"
+
+#: gnome-session/manager.c:176
+msgid "Your session has been saved"
+msgstr "Tavo sesija buvo išsaugota"
+
+#: gnome-session/manager.c:457
+msgid "Wait abandoned due to conflict."
+msgstr "Kilus konfliktui, laukimo atsisakyta."
+
+#: gnome-session/manager.c:904
+#, c-format
+msgid "No response to the %s command."
+msgstr "Jokio atsako į %s komandą."
+
+#: gnome-session/manager.c:905
+msgid "The program may be slow, stopped or broken."
+msgstr "Programa gali būti lėta, sustabdyta arba nulūžusi."
+
+#: gnome-session/manager.c:906
+msgid "You may wait for it to respond or remove it."
+msgstr "Gali palaukti, kol ji atsakys, arba ją pašalinti"
+
+#: gnome-session/manager.c:1516
+#, fuzzy
+msgid "Restart abandoned due to failures."
+msgstr "Prisikėlimas atšauktas, jis sužlugo"
+
+#: gnome-session/manager.c:1692
+msgid "A session shutdown is in progress."
+msgstr "Sesija šiuo metu išjungiama."
+
+#: gnome-session/save-session.c:42
+msgid "Kill session"
+msgstr "Nužudyti sesiją"
+
+#: gnome-session/save-session.c:43
+msgid "Use dialog boxes"
+msgstr "Naudoti dialogus"
+
+#: gnome-session/save-session.c:156
+msgid "Could not connect to the session manager"
+msgstr "Negaliu prisijungti prie sesijos tvarkyklės"
+
+#: gnome-session/save-session.desktop.in.h:1
+msgid "Save Current Session"
+msgstr "Išsaugoti esamą sesiją"
+
+#: gnome-session/save-session.desktop.in.h:2
+msgid "Save current state of desktop"
+msgstr "Išsaugoti esamą darbalaukio būseną"
+
+#: gnome-session/session-names.c:139
+msgid "The session name cannot be empty"
+msgstr "Sesijos pavadinimas negali būti tuščias"
+
+#: gnome-session/session-names.c:149
+msgid "The session name already exists"
+msgstr "Jau yra sesija tokiu pavadinimu"
+
+#: gnome-session/session-names.c:185
+msgid "Add a new session"
+msgstr "Pridėti naują sesiją"
+
+#: gnome-session/session-names.c:215
+msgid "Edit session name"
+msgstr "Pervadinti sesiją"
+
+#: gnome-session/session-properties-capplet.c:104
+#, fuzzy
+msgid "_Edit"
+msgstr "Keisti..."
+
+#: gnome-session/session-properties-capplet.c:172
+msgid ""
+"Some changes are not saved.\n"
+"Is it still OK to exit?"
+msgstr ""
+"kai kurie pakeitimai nebuvo išsaugoti.\n"
+"Ar vis tiek išeiti?"
+
+#: gnome-session/session-properties-capplet.c:201
+#: gnome-session/session-properties.desktop.in.h:2
+#, fuzzy
+msgid "Sessions"
+msgstr "Sesija"
+
+#: gnome-session/session-properties-capplet.c:229
+#, fuzzy
+msgid "Show splash screen on _login"
+msgstr "Rodyti reklamą prisijungiant"
+
+#: gnome-session/session-properties-capplet.c:240
+#, fuzzy
+msgid "_Prompt on logout"
+msgstr "Paklausti atsisveikinant"
+
+#: gnome-session/session-properties-capplet.c:251
+#, fuzzy
+msgid "Automatically save chan_ges to session"
+msgstr "Automatiškai išsaugoti sesijos pakeitimus"
+
+#: gnome-session/session-properties-capplet.c:262
+#, fuzzy
+msgid "_Sessions:"
+msgstr "Sesija"
+
+#: gnome-session/session-properties-capplet.c:279
+msgid "Session Name"
+msgstr "Sesijos pavadinimas"
+
+#: gnome-session/session-properties-capplet.c:326
+msgid "Session Options"
+msgstr "Sesijos parinktys"
+
+#: gnome-session/session-properties-capplet.c:335
+msgid "Current Session"
+msgstr "Esama sesija"
+
+#: gnome-session/session-properties-capplet.c:344
+#, fuzzy
+msgid "Additional startup _programs:"
+msgstr "Pridėti paleidžiamą programą"
+
+#: gnome-session/session-properties-capplet.c:364
+msgid "Command"
+msgstr "Komanda"
+
+#: gnome-session/session-properties-capplet.c:392
+msgid "Startup Programs"
+msgstr "Pradžioje paleidžiamos programos"
+
+#: gnome-session/session-properties.c:49
+msgid "Remove the currently selected client from the session."
+msgstr "Pašalinti pažymėtą klientą iš sesijos."
+
+#: gnome-session/session-properties.c:55
+#, fuzzy
+msgid "Apply changes to the current session"
+msgstr "Automatiškai išsaugoti sesijos pakeitimus"
+
+#: gnome-session/session-properties.c:61
+msgid "The list of programs in the session."
+msgstr "Sesijoje esančių programų sąrašas."
+
+#: gnome-session/session-properties.c:90
+#, fuzzy
+msgid "Currently running _programs:"
+msgstr "Peržiūrėti dabar bėgančias programas..."
+
+#: gnome-session/session-properties.c:104
+msgid "Initialize session settings"
+msgstr "Inicializuoti sesijos nuostatas"
+
+#: gnome-session/session-properties.desktop.in.h:1
+msgid "Configure your sessions"
+msgstr ""
+
+#: gnome-session/splash-widget.c:42
+msgid "Sawfish Window Manager"
+msgstr "Sawfish langų tvarkyklė"
+
+#: gnome-session/splash-widget.c:43
+msgid "Metacity Window Manager"
+msgstr "Metacity langų tvarkyklė"
+
+#: gnome-session/splash-widget.c:44
+msgid "Window Manager"
+msgstr "Langų tvarkyklė"
+
+#: gnome-session/splash-widget.c:45
+msgid "The Panel"
+msgstr "Skydelis"
+
+#: gnome-session/splash-widget.c:46
+msgid "Session Manager Proxy"
+msgstr "Sesijos valdymo tarpininkas"
+
+#: gnome-session/splash-widget.c:47
+msgid "Nautilus"
+msgstr "Nautilus"
+
+#: gnome-session/splash-widget.c:48
+#, fuzzy
+msgid "Desktop Settings"
+msgstr "Klaviatūros nuostatos"
+
+#: gnome-session/startup-programs.c:289
+#, fuzzy
+msgid "_Startup Command:"
+msgstr "Paleidžiama komanda"
+
+#: gnome-session/startup-programs.c:295
+msgid "Startup Command"
+msgstr "Paleidžiama komanda"
+
+#: gnome-session/startup-programs.c:338
+msgid "The startup command cannot be empty"
+msgstr "Paleidimo komanda negali būti tuščia"
+
+#: gnome-session/startup-programs.c:378
+msgid "Add Startup Program"
+msgstr "Pridėti paleidžiamą programą"
+
+#: gnome-session/startup-programs.c:399
+msgid "Edit Startup Program"
+msgstr "Keisti paleidžiamą programą"
+
+#~ msgid "Audio Settings"
+#~ msgstr "Garso nuostatos"
+
+#~ msgid "Screensaver"
+#~ msgstr "Užsklanda"
+
+#~ msgid "Background Settings"
+#~ msgstr "Fono nuostatos"
+
+#~ msgid "Mouse Settings"
+#~ msgstr "Pelės nuostatos"
+
+#~ msgid "Priority"
+#~ msgstr "Svarbumas"
+
+#, fuzzy
+#~ msgid "_Priority:"
+#~ msgstr "Svarbumas"
+
+#~ msgid "Starting GNOME: %s"
+#~ msgstr "Paleidžiama GNOME: %s"
+
+#~ msgid "Starting GNOME: done"
+#~ msgstr "Paleidžiama GNOME: atlikta"
+
+#~ msgid "GNOME"
+#~ msgstr "GNOME"
+
+#~ msgid "Starting GNOME"
+#~ msgstr "Paleidžiama GNOME"
+
+#~ msgid "GNOME Login"
+#~ msgstr "GNOME prisijungimas"
+
+#~ msgid "Login"
+#~ msgstr "Vartotojas"
+
+#~ msgid "Start with default programs"
+#~ msgstr "Paleisti su standartinėmis programomis"
+
+#~ msgid "Reset all user settings"
+#~ msgstr "Atstatyti visas nuostatas į gamyklines"
+
+#~ msgid "Really reset all GNOME user settings for %s?"
+#~ msgstr "Tikrai iš naujo nustatyti visą GNOME aplinką vartotojui %s?"
+
+#~ msgid ""
+#~ "The directory /tmp/orbit-%s is not owned\n"
+#~ "by the current user, %s.\n"
+#~ "Please correct the ownership of this directory."
+#~ msgstr ""
+#~ "Katalogas /tmp/orbit-%s nepriklauso\n"
+#~ "esamam vartotojui, %s.\n"
+#~ "Pataisyk šio katalogo priklausomybę."
+
+#~ msgid "Continue"
+#~ msgstr "Tęsti"
+
+#~ msgid ""
+#~ "Your version of libICE has a bug which causes gnome-session\n"
+#~ "to not function correctly.\n"
+#~ "\n"
+#~ "If you are on Solaris, you should either upgrade to Solaris patch\n"
+#~ "#108376-16 or use the libICE.so.6 from the original Solaris 7.\n"
+#~ "Copy the file into /usr/openwin/lib.  (Thanks go to Andy Reitz\n"
+#~ "for information on this bug).\n"
+#~ "\n"
+#~ "Your GNOME session will terminate after closing this dialog."
+#~ msgstr ""
+#~ "Tavo libICE versiją turi klaidą, dėl kurios gnome-session\n"
+#~ "veikia neteisingai.\n"
+#~ "\n"
+#~ "Jei naudoji Solaris, turėtum arba pritaikyti Solaris lopą\n"
+#~ "#108376-16, arba naudoti libICE.so.6 iš originalaus Solaris 7.\n"
+#~ "Nukopijuok tą bylą į /usr/openwin/lib.\n"
+#~ "\n"
+#~ "Tavo sesiją baigsis uždarius šį dialogą."
+
+#~ msgid "Respawn"
+#~ msgstr "Prisikelianti"
+
+#~ msgid "Really log out?"
+#~ msgstr "Tikrai atsijungti?"
+
+#~ msgid "Reboot"
+#~ msgstr "Perkrauti"
+
+#~ msgid "Session properties"
+#~ msgstr "Sesijos savybės"
+
+#~ msgid "Options"
+#~ msgstr "Nuostatos"
+
+#~ msgid "Choose Current Session"
+#~ msgstr "Pasirink esamą sesiją"
+
+#~ msgid "Add..."
+#~ msgstr "Pridėti..."
+
+#~ msgid "Delete"
+#~ msgstr "Ištrinti"
+
+#~ msgid "Non-session-managed Startup Programs"
+#~ msgstr "Sesijos nevaldomos, pradžioje paleidžiamos programos"
+
+#~ msgid "Session Chooser"
+#~ msgstr "Sesijos parinkiklis"
+
+#~ msgid "Start Session"
+#~ msgstr "Paleisti sesiją"
+
+#~ msgid "Cancel Login"
+#~ msgstr "Atšaukti prisijungimą"
+
+#~ msgid "Session Properties & Startup Programs"
+#~ msgstr "Sesijos savybės ir pradžioje paleidžiamos programos"
+
+#~ msgid ""
+#~ "Programs with smaller values are started before programs with higher "
+#~ "values. The default value should be OK"
+#~ msgstr ""
+#~ "Programos su mažesnėmis reikšmėmis yra paleidžiamos prieš tas su "
+#~ "didesnėmis reikšmėmis. Įprastinė reikšmė turėtų būti gera."
+
+#~ msgid "Could not connect to gnome-session"
+#~ msgstr "Negaliu prisijungti prie gnome-session"
+
+#~ msgid "Session Properties"
+#~ msgstr "Sesijos savybės"
+
+#~ msgid "Current session managed programs"
+#~ msgstr "Esamos sesijos valdomos programos"
+
+#~ msgid "Enlightenment Window Manager"
+#~ msgstr "Enlightenment langų tvarkyklė"
+
+#~ msgid "Keyboard Bell"
+#~ msgstr "Klaviatūros pypsėjimas"
+
+#~ msgid "Desktop"
+#~ msgstr "Darbalaukis"
+
+#~ msgid "Remove"
+#~ msgstr "Pašalinti"
+
+#~ msgid "Try"
+#~ msgstr "Bandyti"
+
+#~ msgid "OK"
+#~ msgstr "Gerai"
+
+#~ msgid "Cancel"
+#~ msgstr "Atšaukti"
+
+#~ msgid "Help"
+#~ msgstr "Pagalba"

@@ -1,0 +1,309 @@
+2003-02-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.2.0.2.
+
+2003-01-22  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "mn" to ALL_LINGUAS.
+
+2003-01-21  Thomas Vander Stichele <thomas at apestaart dot org>
+
+        * configure.in: tell Makefile's about aclocal flags
+
+2003-01-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.2.0.1.
+
+2003-01-21  Jakub Steiner <jimmac@ximian.com>
+
+	* gnome-session/gnome-splash.png: gnome 2.2 splash
+	
+2003-01-21  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.2.0.
+
+2003-01-16  Pablo Saratxaga  <pablo@mandrakesoft.com>
+
+	* configure.in: Added Amharic (am), Arabic (ar) to ALL_LINGUAS
+
+2003-01-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.90.
+
+2002-12-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.5.
+
+2002-12-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.4.
+
+2002-12-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* man/gnome-session.1.in: apply patch
+	from Alex Duggan to fixup reference
+	to save-session. Fixes #100515.
+
+2002-12-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* man/gnome-session-save.1: renamed from
+	session-save.1 and apply patch from
+	Christian Marillat. Fixes #100514.
+
+	* man/Makefile.am:
+	* man/default.session.5.in,
+	  man/gnome-session-save.1,
+	  man/gnome-session.1.in,
+	  man/gnome-wm.1: moved here from
+	gnome-session/gnome-session.
+
+        * man/Makefile.am, gnome-session/Makefile.am,
+	  configure.in: updated.
+
+2002-11-28  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.3.
+
+2002-11-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.2.
+
+2002-11-03  Dmitry G. Mastrukov  <dmitry@taurussoft.org>
+
+	* configure.in: Added Belarusian to ALL_LINGUAS
+
+2002-10-14  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.1.
+
+2002-10-02  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in:
+	output gnome-session/gnome-session.schemas.in
+
+2002-09-28  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.1.0.
+
+2002-09-19  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: require gtk+ 2.1.0 for the
+	multihead stuff.
+
+2002-08-08  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add check for gtk+ with multihead
+	support.
+
+2002-07-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: set version to 2.1.0. 2.0.x
+	development is on the gnome-2-0 branch.
+
+2002-07-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.3.
+
+2002-07-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* man/gnome-libice-check.1:
+	* man/gnome-libice-check.sgml:
+	* man/gnome-login-check.1:
+	* man/gnome-login-check.sgml: remove old man pages.
+
+2002-07-25  jacob berkman  <jacob@ximian.com>
+
+	* configure.in: bs.po file was never committed, so it from
+	ALL_LINGUAS
+
+2002-07-25  Pablo Saratxaga  <pablo@mandrakesoft.com>
+
+	* configure.in: Added Bosnian (bs) to ALL_LINGUAS
+
+2002-07-16  Michael Meeks  <michael@ximian.com>
+
+	* configure.in: remove canvas check.
+
+2002-07-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.2.
+
+Fri Jul 12 10:07:29 2002  George Lebl <jirka@5z.com>
+
+	* gnome-session/save-session.desktop.in,
+	  gnome-session/session-properties.desktop.in: Add Encoding=UTF-8,
+	  and add ';' to the end of the categories list as per the
+	  standard
+
+2002-07-12  Brian Cameron  <Brian.Cameron@sun.com>
+
+	* configure.in
+	Now support esd when it is installed via the --with-esd-dir
+	configure option
+
+2002-07-11  Brian Cameron  <Brian.Cameron@sun.com>
+
+	* configure.in
+	Now support gconf-sanity-check when it is installed in libexec.
+
+2002-07-08  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add check for rsh and define
+	RSH_COMMAND.
+
+2002-07-01  jacob berkman  <jacob@ximian.com>
+
+	* configure.in: nuke login check stuffis
+
+2002-06-21  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: enable compile warnings.
+
+2002-06-19  jacob berkman  <jacob@ximian.com>
+
+	* configure.in: check for esound, fix halt/reboot checks, and
+	gereate LIBS for gnome-login-check and gnome-smproxy
+
+2002-06-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.1.
+
+2002-06-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.0.0.
+
+2002-06-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.21.
+
+2002-05-28  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.20.
+
+2002-05-18  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Added "mk" to ALL_LINGUAS.
+	
+2002-05-16  Mark McLoughlin  <mark@skynet.ie>
+
+	* HACKING, README: update to be a little more useful.
+
+2002-05-13  Naba Kumar <kh_naba@users.sourceforge.net>
+
+	* configure.in: Added hi in ALL_LINGUAS
+
+2002-15-13  Glynn Foster <glynn.foster@sun.com>
+
+	* configure.in: Version 1.5.19
+	* NEWS: Update for 1.5.19
+
+2002-05-13  jacob berkman  <jacob@ximian.com>
+
+	* configure.in: check for gconftool
+
+2002-04-29  Glynn Foster  <glynn.foster@sun.com>
+
+	* NEWS: Update for 1.5.18.
+
+2002-04-29  Glynn Foster <glynn.foster@sun.com
+
+	* configure.in: Version 1.5.18.
+
+2002-04-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.17.
+
+2002-04-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: update our requirements so
+	people aren't using crufty libraries.
+
+2002-04-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.16.
+
+2002-04-01  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.15.
+
+2002-04-01  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.14.
+
+2002-03-25  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.13.
+
+2002-03-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.12.
+
+2002-03-13  Gregory Leblanc  <gleblanc@linuxweasel.com>
+
+	* gnome-session.spec.in:  Rewrite from Chris Chabot
+
+2002-03-12  Shivram U  <shivaram.upadhyayula@wipro.com>
+
+	* configure.in: Checking for X Development libraries explicitly.
+	* gnome-session/Makefile.am : Added X_LIBS to the LD_ADD flags.
+	* smproxy/Makefile.am : Added X_LIBS to the LDADD flags. Fixes #73882
+
+2002-03-11  Glynn Foster  <glynn.foster@sun.com>
+
+	* README: Update.
+	* autogen.sh: Update.
+	* gnome-session/ChangeLog: Update.
+
+2002-02-25  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.11.
+
+2002-02-21  Laszlo Peter  <laca@ireland.sun.com>
+
+	* configure.in: find the correct path to the reboot/halt
+	commands or let the user specify with --with-reboot-command
+	and --with-halt-command.
+
+	* gnome-session/Makefile.am: define HALT_COMMAND and REBOOT_COMMAND
+
+	* gnome-session/logout.c: use the HALT_COMMAND and REBOOT_COMMAND
+	macros instead of the hard coded paths.
+
+	(reviewed by Mark McLoughlin <mark@skynet.ie>)
+
+2002-02-19  Mark McLoughlin  <mark@skynet.ie>
+
+	* man/Makefile.am: remove man pages for apps
+	not installed by this package.
+
+2002-02-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.10.
+
+2002-02-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 1.5.9.
+
+2002-02-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* AUTHORS: update for authors of gsm and smproxy.
+
+	* HACKING, MAINTAINERS: me and george for now.
+
+	* README: upd.
+
+	* configure.in: remove cruft.
+
+	* Makefile.am, gnome-desktop.spec.in: rename spec file.
+
+2002-02-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: change GETTEXT_PACKAGE. Thanks Jacob.
+
+2002-02-12  Mark McLoughlin  <mark@skynet.ie>
+
+	gnome-session module split off from gnome-core.
+
+        * Makefile.am, autogen.sh, configure.in: initial work
+        to get things building.
+

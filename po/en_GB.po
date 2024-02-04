@@ -1,0 +1,751 @@
+# English (British) translation of gnome-core
+# Copyright (C) 1999-2000 Free Software Foundation, Inc.
+# Robert Brady <robert@susu.org.uk>, 1999-2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-core 1.1.2\n"
+"POT-Creation-Date: 2003-02-04 11:59+1300\n"
+"PO-Revision-Date: 2001-01-15 15:27-0100\n"
+"Last-Translator: Robert Brady <robert@susu.org.uk>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gnome-session/gnome-session.schemas.in.in.h:1
+msgid "Allow TCP connections"
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:2
+msgid ""
+"For security reasons, on platforms which have _IceTcpTransNoListen() "
+"(XFree86 systems), gnome-session does not listen for connections on TCP "
+"ports. This option will allow connections from (authorized) remote hosts. "
+"gnome-session must be restarted for this to take effect."
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:3
+msgid "If enabled, gnome-session will prompt the user before ending a session."
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:4
+msgid ""
+"If enabled, gnome-session will save the session automatically. Otherwise, "
+"the logout dialog will have an option to save the session."
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:5
+msgid "Logout prompt"
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:6
+msgid ""
+"Preferred Image to use for the splash screen when logging in to the GNOME "
+"Desktop"
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:7
+msgid "Save sessions"
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:8
+msgid "Show the splash screen"
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:9
+msgid "Show the splash screen when the session starts up"
+msgstr ""
+
+#: gnome-session/gnome-session.schemas.in.in.h:10
+msgid "Splash Screen Image"
+msgstr ""
+
+#: gnome-session/gsm-client-editor.c:96 gnome-session/startup-programs.c:310
+msgid "_Order:"
+msgstr ""
+
+#: gnome-session/gsm-client-editor.c:98
+msgid "The order in which applications are started in the session."
+msgstr ""
+
+#: gnome-session/gsm-client-editor.c:105
+msgid "What happens to the application when it exits."
+msgstr ""
+
+#: gnome-session/gsm-client-editor.c:108
+msgid "_Style:"
+msgstr ""
+
+#: gnome-session/gsm-client-list.c:150
+#: gnome-session/session-properties-capplet.c:362
+msgid "Order"
+msgstr ""
+
+#: gnome-session/gsm-client-list.c:155
+msgid "Style"
+msgstr ""
+
+#: gnome-session/gsm-client-list.c:160
+msgid "State"
+msgstr ""
+
+#: gnome-session/gsm-client-list.c:165
+msgid "Program"
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:31
+msgid "Inactive"
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:32
+msgid "Waiting to start or already finished."
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:34
+msgid "Starting"
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:35
+msgid "Started but has not yet reported state."
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:37
+msgid "Running"
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:38
+msgid "A normal member of the session."
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:40
+msgid "Saving"
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:41
+msgid "Saving session details."
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:43
+msgid "Unknown"
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:44
+msgid "State not reported within timeout."
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:50
+msgid "Normal"
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:51
+msgid "Unaffected by logouts but can die."
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:53
+msgid "Restart"
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:54
+msgid "Never allowed to die."
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:56
+msgid "Trash"
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:57
+msgid "Discarded on logout and can die."
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:59
+msgid "Settings"
+msgstr ""
+
+#: gnome-session/gsm-client-row.c:60
+msgid "Always started on every login."
+msgstr ""
+
+#.
+#. * it would be nice to have a dialog which either:
+#. *
+#. * 1.  lets you change the message on it
+#. * 2.  lets you append messages and has a "history"
+#. *
+#. * for now, we just kill the old dialog and pop up a new one.
+#.
+#: gnome-session/gsm-gsd.c:41
+msgid ""
+"There was an error starting the GNOME Settings Daemon.\n"
+"\n"
+"Some things, such as themes, sounds, or background settings may not work "
+"correctly."
+msgstr ""
+
+#: gnome-session/gsm-gsd.c:53
+msgid ""
+"\n"
+"\n"
+"The last error message was:\n"
+"\n"
+msgstr ""
+
+#: gnome-session/gsm-gsd.c:58
+msgid ""
+"\n"
+"\n"
+"GNOME will still try to restart the Settings Daemon next time you log in."
+msgstr ""
+
+#: gnome-session/gsm-gsd.c:115
+msgid "There was an unknown activation error."
+msgstr ""
+
+#: gnome-session/gsm-gsd.c:157
+msgid "The Settings Daemon restarted too many times."
+msgstr ""
+
+#: gnome-session/logout.c:270
+msgid "Are you sure you want to log out?"
+msgstr ""
+
+#: gnome-session/logout.c:298
+msgid "_Save current setup"
+msgstr ""
+
+#: gnome-session/logout.c:318
+msgid "Action"
+msgstr ""
+
+#: gnome-session/logout.c:326
+msgid "_Log Out"
+msgstr ""
+
+#: gnome-session/logout.c:329
+msgid "Sh_ut Down"
+msgstr ""
+
+#: gnome-session/logout.c:332
+msgid "_Restart the computer"
+msgstr ""
+
+#: gnome-session/main.c:76
+msgid "Specify a session name to load"
+msgstr ""
+
+#: gnome-session/main.c:77
+msgid "Only read saved sessions from the default.session file"
+msgstr ""
+
+#: gnome-session/main.c:78
+msgid "Millisecond period spent waiting for clients to register (0=forever)"
+msgstr ""
+
+#: gnome-session/main.c:79
+msgid "Millisecond period spent waiting for clients to respond (0=forever)"
+msgstr ""
+
+#: gnome-session/main.c:80
+msgid "Millisecond period spent waiting for clients to die (0=forever)"
+msgstr ""
+
+#: gnome-session/main.c:212
+#, c-format
+msgid ""
+"Could not look up internet address for %s.\n"
+"This will prevent GNOME from operating correctly.\n"
+"It may be possible to correct the problem by adding\n"
+"%s to the file /etc/hosts."
+msgstr ""
+
+#: gnome-session/main.c:219
+msgid "Log in Anyway"
+msgstr ""
+
+#: gnome-session/main.c:220
+msgid "Try Again"
+msgstr ""
+
+#: gnome-session/manager.c:176
+msgid "Your session has been saved"
+msgstr ""
+
+#: gnome-session/manager.c:457
+msgid "Wait abandoned due to conflict."
+msgstr ""
+
+#: gnome-session/manager.c:904
+#, c-format
+msgid "No response to the %s command."
+msgstr ""
+
+#: gnome-session/manager.c:905
+msgid "The program may be slow, stopped or broken."
+msgstr ""
+
+#: gnome-session/manager.c:906
+msgid "You may wait for it to respond or remove it."
+msgstr ""
+
+#: gnome-session/manager.c:1516
+msgid "Restart abandoned due to failures."
+msgstr ""
+
+#: gnome-session/manager.c:1692
+msgid "A session shutdown is in progress."
+msgstr ""
+
+#: gnome-session/save-session.c:42
+msgid "Kill session"
+msgstr ""
+
+#: gnome-session/save-session.c:43
+msgid "Use dialog boxes"
+msgstr ""
+
+#: gnome-session/save-session.c:156
+msgid "Could not connect to the session manager"
+msgstr ""
+
+#: gnome-session/save-session.desktop.in.h:1
+msgid "Save Current Session"
+msgstr ""
+
+#: gnome-session/save-session.desktop.in.h:2
+msgid "Save current state of desktop"
+msgstr ""
+
+#: gnome-session/session-names.c:139
+msgid "The session name cannot be empty"
+msgstr ""
+
+#: gnome-session/session-names.c:149
+msgid "The session name already exists"
+msgstr ""
+
+#: gnome-session/session-names.c:185
+msgid "Add a new session"
+msgstr ""
+
+#: gnome-session/session-names.c:215
+msgid "Edit session name"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:104
+msgid "_Edit"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:172
+msgid ""
+"Some changes are not saved.\n"
+"Is it still OK to exit?"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:201
+#: gnome-session/session-properties.desktop.in.h:2
+msgid "Sessions"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:229
+msgid "Show splash screen on _login"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:240
+msgid "_Prompt on logout"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:251
+msgid "Automatically save chan_ges to session"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:262
+msgid "_Sessions:"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:279
+msgid "Session Name"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:326
+msgid "Session Options"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:335
+msgid "Current Session"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:344
+msgid "Additional startup _programs:"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:364
+msgid "Command"
+msgstr ""
+
+#: gnome-session/session-properties-capplet.c:392
+msgid "Startup Programs"
+msgstr ""
+
+#: gnome-session/session-properties.c:49
+msgid "Remove the currently selected client from the session."
+msgstr ""
+
+#: gnome-session/session-properties.c:55
+msgid "Apply changes to the current session"
+msgstr ""
+
+#: gnome-session/session-properties.c:61
+msgid "The list of programs in the session."
+msgstr ""
+
+#: gnome-session/session-properties.c:90
+msgid "Currently running _programs:"
+msgstr ""
+
+#: gnome-session/session-properties.c:104
+msgid "Initialize session settings"
+msgstr ""
+
+#: gnome-session/session-properties.desktop.in.h:1
+msgid "Configure your sessions"
+msgstr ""
+
+#: gnome-session/splash-widget.c:42
+msgid "Sawfish Window Manager"
+msgstr ""
+
+#: gnome-session/splash-widget.c:43
+msgid "Metacity Window Manager"
+msgstr ""
+
+#: gnome-session/splash-widget.c:44
+msgid "Window Manager"
+msgstr ""
+
+#: gnome-session/splash-widget.c:45
+msgid "The Panel"
+msgstr ""
+
+#: gnome-session/splash-widget.c:46
+msgid "Session Manager Proxy"
+msgstr ""
+
+#: gnome-session/splash-widget.c:47
+msgid "Nautilus"
+msgstr ""
+
+#: gnome-session/splash-widget.c:48
+#, fuzzy
+msgid "Desktop Settings"
+msgstr "Background colour"
+
+#: gnome-session/startup-programs.c:289
+msgid "_Startup Command:"
+msgstr ""
+
+#: gnome-session/startup-programs.c:295
+msgid "Startup Command"
+msgstr ""
+
+#: gnome-session/startup-programs.c:338
+msgid "The startup command cannot be empty"
+msgstr ""
+
+#: gnome-session/startup-programs.c:378
+msgid "Add Startup Program"
+msgstr ""
+
+#: gnome-session/startup-programs.c:399
+msgid "Edit Startup Program"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Background Settings"
+#~ msgstr "Background colour"
+
+#~ msgid "Color Xterm"
+#~ msgstr "Colour Xterm"
+
+#~ msgid "Custom"
+#~ msgstr "Custom"
+
+#~ msgid "Custom colors"
+#~ msgstr "Custom colours"
+
+#~ msgid "Color selector"
+#~ msgstr "Colour selector"
+
+#~ msgid "Foreground color"
+#~ msgstr "Foreground colour"
+
+#~ msgid "COLOR"
+#~ msgstr "COLOUR"
+
+#~ msgid "Background color"
+#~ msgstr "Background colour"
+
+#~ msgid "Background color:"
+#~ msgstr "Background colour:"
+
+#, fuzzy
+#~ msgid "Background should be shaded"
+#~ msgstr "Background colour"
+
+#, fuzzy
+#~ msgid "Background type"
+#~ msgstr "Background colour"
+
+#~ msgid "Color palette:"
+#~ msgstr "Colour palette:"
+
+#~ msgid "Color scheme:"
+#~ msgstr "Colour scheme:"
+
+#~ msgid "Colors"
+#~ msgstr "Colours"
+
+#, fuzzy
+#~ msgid "Fore/Background Color:"
+#~ msgstr "Fore/Background Colour:"
+
+#~ msgid "Foreground color:"
+#~ msgstr "Foreground colour:"
+
+#, fuzzy
+#~ msgid "Pick a color"
+#~ msgstr "Clock colour"
+
+#, fuzzy
+#~ msgid "C_olor selector"
+#~ msgstr "Colour selector"
+
+#, fuzzy
+#~ msgid "_Close terminal"
+#~ msgstr "Colour Xterm"
+
+#, fuzzy
+#~ msgid "Font Selection"
+#~ msgstr "Colour selector"
+
+#~ msgid "Szabolcs 'Shooby' Ban"
+#~ msgstr "Szabolcs 'Shooby' Bán"
+
+#~ msgid "Frederic Devernay"
+#~ msgstr "Frédéric Devernay"
+
+#~ msgid "Gergo Erdi"
+#~ msgstr "Gergo Érdi"
+
+#~ msgid "Alexandre Muniz"
+#~ msgstr "Alexandre Muñiz"
+
+#~ msgid "Martin Norbaeck"
+#~ msgstr "Martin Norbäck"
+
+#~ msgid "Tomas Oegren"
+#~ msgstr "Tomas Ögren"
+
+#~ msgid "Inigo Serna"
+#~ msgstr "Iñigo Serna"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H%M"
+
+#, fuzzy
+#~ msgid "Select animation"
+#~ msgstr "Colour selector"
+
+#, fuzzy
+#~ msgid "Text only"
+#~ msgstr "Text Colour"
+
+#, fuzzy
+#~ msgid "Solaris"
+#~ msgstr "Colours"
+
+#, fuzzy
+#~ msgid "%l:%M %p"
+#~ msgstr "%H%M %Z"
+
+#, fuzzy
+#~ msgid "%l:%M:%S %p"
+#~ msgstr "%H%M %Z"
+
+#, fuzzy
+#~ msgid "%I:%M:%S %p"
+#~ msgstr "%H%M %Z"
+
+#, fuzzy
+#~ msgid "Panel Settings"
+#~ msgstr "Background colour"
+
+#, fuzzy
+#~ msgid "No program selected"
+#~ msgstr "Colour selector"
+
+#, fuzzy
+#~ msgid "%I: %M: %S: %p"
+#~ msgstr "%H%M %Z"
+
+#~ msgid "Color"
+#~ msgstr "Colour"
+
+#~ msgid "Color to use:"
+#~ msgstr "Colour to use:"
+
+#, fuzzy
+#~ msgid "Games menu"
+#~ msgstr "Favourites menu"
+
+#, fuzzy
+#~ msgid "rxvt terminal"
+#~ msgstr "Colour Xterm"
+
+#, fuzzy
+#~ msgid "X Terminal"
+#~ msgstr "Colour Xterm"
+
+#~ msgid "Favorites"
+#~ msgstr "Favourites"
+
+#, fuzzy
+#~ msgid "Add this program to Favorites"
+#~ msgstr "Add this to Favourites menu"
+
+#~ msgid "Add this to Favorites menu"
+#~ msgstr "Add this to Favourites menu"
+
+#~ msgid "Favorites: "
+#~ msgstr "Favourites: "
+
+#~ msgid "Show iconified (minimized) applications"
+#~ msgstr "Show iconified (minimised) applications"
+
+#~ msgid "Show iconified (minimized) applications on all desktops"
+#~ msgstr "Show iconified (minimised) applications on all desktops"
+
+#~ msgid "Favorites (user menus)"
+#~ msgstr "Favourites (user menus)"
+
+#~ msgid ""
+#~ "Released under the terms of the GNU Public License.\n"
+#~ "GNOME menu editor."
+#~ msgstr ""
+#~ "Released under the terms of the GNU Public Licence.\n"
+#~ "GNOME menu editor."
+
+#~ msgid ""
+#~ "Alternate editor types are not supported by gnome-edit yet.\n"
+#~ "Please choose a standard executable editor in the gnome-edit capplet\n"
+#~ "in the gnome control center."
+#~ msgstr ""
+#~ "Alternate editor types are not supported by gnome-edit yet.\n"
+#~ "Please choose a standard executable editor in the gnome-edit capplet\n"
+#~ "in the gnome control centre."
+
+#~ msgid ""
+#~ "You've chosen to disable the startup hint.\n"
+#~ "To re-enable it, choose \"Startup Hint\"\n"
+#~ "in the GNOME Control Center"
+#~ msgstr ""
+#~ "You've chosen to disable the startup hint.\n"
+#~ "To re-enable it, choose \"Startup Hint\"\n"
+#~ "in the GNOME Control Centre"
+
+#, fuzzy
+#~ msgid "Copy date to selection"
+#~ msgstr "Colour selector"
+
+#~ msgid "C_olor selector..."
+#~ msgstr "C_olour selector..."
+
+#~ msgid ""
+#~ "Released under the GNU general public license.\n"
+#~ "A modem status indicator and dialer.Lights in order from the top or left "
+#~ "are RX and TX"
+#~ msgstr ""
+#~ "Released under the GNU general public licence.\n"
+#~ "A modem status indicator and dialer.Lights in order from the top or left "
+#~ "are RX and TX"
+
+#~ msgid ""
+#~ "This GNOME applet adds a command line to the panel. It features command "
+#~ "completion, command history, changeable macros and an optional built-in "
+#~ "clock.\n"
+#~ "\n"
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "This GNOME applet adds a command line to the panel. It features command "
+#~ "completion, command history, changeable macros and an optional built-in "
+#~ "clock.\n"
+#~ "\n"
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public Licence as published by the "
+#~ "Free Software Foundation; either version 2 of the Licence, or (at your "
+#~ "option) any later version."
+
+#~ msgid ""
+#~ "Released under the GNU general public license.\n"
+#~ "Displays time in Binary Coded Decimal\n"
+#~ "http://snoopy.net/~jon/jbc/."
+#~ msgstr ""
+#~ "Released under the GNU general public licence.\n"
+#~ "Displays time in Binary Coded Decimal\n"
+#~ "http://snoopy.net/~jon/jbc/."
+
+#~ msgid "Inactive Desktop Color"
+#~ msgstr "Inactive Desktop Colour"
+
+#~ msgid "Inactive Window Color"
+#~ msgstr "Inactive Window Colour"
+
+#~ msgid "Active Window Color"
+#~ msgstr "Active Window Colour"
+
+#~ msgid ""
+#~ "Released under the GNU general public license.\n"
+#~ "Mounts and Unmounts drives.."
+#~ msgstr ""
+#~ "Released under the GNU general public licence.\n"
+#~ "Mounts and Unmounts drives.."
+
+#~ msgid "Backgroundcolor"
+#~ msgstr "Background Colour"
+
+#~ msgid ""
+#~ "Released under the GNU general public license.\n"
+#~ "Basic digital clock with date in a tooltip. Optional 12/24 time display. "
+#~ "Mail blinking can be for any unread mail, or only briefly when new mail "
+#~ "arrives."
+#~ msgstr ""
+#~ "Released under the GNU general public licence.\n"
+#~ "Basic digital clock with date in a tooltip. Optional 12/24 time display. "
+#~ "Mail blinking can be for any unread mail, or only briefly when new mail "
+#~ "arrives."
+
+#~ msgid "Graph Tick Color:"
+#~ msgstr "Graph Tick Colour:"
+
+#~ msgid "Graph Battery Low Color:"
+#~ msgstr "Graph Battery Low Colour:"
+
+#~ msgid "Low Battery Color:"
+#~ msgstr "Low Battery Color:"
+
+#~ msgid "AC-Off Battery Color:"
+#~ msgstr "AC-Off Battery Colour:"
+
+#~ msgid "AC-On Battery Color:"
+#~ msgstr "AC-On Battery Colour:"
+
+#~ msgid "Second needle color"
+#~ msgstr "Second needle colour"
+
+#~ msgid "Minute needle color"
+#~ msgstr "Minute needle colour"
+
+#~ msgid "Hour needle color"
+#~ msgstr "Hour needle colour"
